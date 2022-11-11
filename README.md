@@ -25,22 +25,29 @@ Business Goal: You are required to model the demand for shared bikes with the av
 
 ## Technologies Used
 
+numpy
+pandas 
+matplotlib.pyplot 
+seaborn 
+sklearn
 
 
 ## Conclusions
-- Conclusion 1 from the analysis
-- Conclusion 2 from the analysis
-- Conclusion 3 from the analysis
-- Conclusion 4 from the analysis
 
-<!-- You don't have to answer all the questions - just the ones relevant to your project. -->
+We carried out the analysis using the techique of elimation of variables with OLS method. Our training model resulted in a R square value of almost 80 percent which is acceptable. Which concludes that, almost 80 percent of the data of cnt present in the training set is explained by our independent variables.
 
+The final relationship between demand and predictors is as follows.
 
+cnt = 0.5029 + 0.2650yr + 0.0470workingday + (-0.1292)windspeed + (-0.2602)spring + (-0.2759)Light rain_Light snow_Thunderstorm + (-0.0952)Mist_cloudy + (-0.1196)december + (-0.1079)january + (-0.1290)november + (0.0800)september + 0.0500*saturday.
 
+where 'temp','hum','windspeed' and 'cnt' are normalized.
 
+Our test data set has returned a R Square of 79 percent, which states 79 percent of the data present in test set is explained by the model we have created. This is a descent result to achieve.
 
+Note :
 
+Data has been cleaned to drop outliers that might affect the model adversely The model has been verified for Multicollinearity effects Residual Analysis has been carried out and the model satisfies the assumptions of Ordinary Least Squares approach Q-Q plot between residual distribution and normal distribution shows that residuals follow a normal distribution for all interpolations.
 
 
 ## Contact
-Created by [@githubusername] - feel free to contact me!
+@sreejith-rajashekaran 
